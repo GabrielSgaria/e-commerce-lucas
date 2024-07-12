@@ -153,6 +153,7 @@ body {
 
 .about {
     padding: 32px;
+    max-width: 50%;
 }
 
 .about-title {
