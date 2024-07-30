@@ -215,6 +215,9 @@ body {
     padding: 32px;
     border-radius: 8px;
 }
+.popup-content-p{
+   margin-bottom: 20px
+}
 
 .popup-title {
     font-size: 24px;

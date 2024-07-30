@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Galeria</title>
 </head>
@@ -25,7 +25,7 @@
     </nav>
     <main class="grid">
         <div class="card">
-            <img src="/image/products/1.jpg" alt="Product 1" class="card-img" />
+            <img src="/image/products/1.jpg" alt="Tênis Airmax." class="card-img" />
             <h2 class="card-title">Nike AirMax</h2>
             <p class="card-description">Tênis Airmax.</p>
             <div class="card-footer">
@@ -34,63 +34,63 @@
             </div>
         </div>
         <div class="card">
-            <img src="/image/products/1.jpg" alt="Product 1" class="card-img" />
-            <h2 class="card-title">Nike AirMax</h2>
-            <p class="card-description">Tênis Airmax.</p>
+            <img src="/image/products/2.jpg" alt="Tênis Jordan 1." class="card-img" />
+            <h2 class="card-title">Nike Jordan</h2>
+            <p class="card-description">Tênis Jordan 1.</p>
             <div class="card-footer">
-                <span class="card-price">R$ 699,99</span>
+                <span class="card-price">R$ 799,99</span>
                 <button class="btn">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="card">
-            <img src="/image/products/1.jpg" alt="Product 1" class="card-img" />
-            <h2 class="card-title">Nike AirMax</h2>
-            <p class="card-description">Tênis Airmax.</p>
+            <img src="/image/products/3.jpg" alt="Boné Los Angeles." class="card-img" />
+            <h2 class="card-title">Boné L.A.</h2>
+            <p class="card-description">Boné Los Angeles.</p>
             <div class="card-footer">
-                <span class="card-price">R$ 699,99</span>
+                <span class="card-price">R$ 199,99</span>
                 <button class="btn">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="card">
-            <img src="/image/products/1.jpg" alt="Product 1" class="card-img" />
-            <h2 class="card-title">Nike AirMax</h2>
-            <p class="card-description">Tênis Airmax.</p>
+            <img src="/image/products/4.jpg" alt="Boné Vermelho BN" class="card-img" />
+            <h2 class="card-title">Boné BN</h2>
+            <p class="card-description">Boné Vermelho BN</p>
             <div class="card-footer">
-                <span class="card-price">R$ 699,99</span>
+                <span class="card-price">R$ 99,99</span>
                 <button class="btn">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="card">
-            <img src="/image/products/1.jpg" alt="Product 1" class="card-img" />
-            <h2 class="card-title">Nike AirMax</h2>
-            <p class="card-description">Tênis Airmax.</p>
+            <img src="/image/products/5.jpg" alt="Moletom Basic White" class="card-img" />
+            <h2 class="card-title">Moletom Basic White</h2>
+            <p class="card-description">Moletom Basic White</p>
             <div class="card-footer">
-                <span class="card-price">R$ 699,99</span>
+                <span class="card-price">R$ 299,99</span>
                 <button class="btn">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="card">
-            <img src="/image/products/1.jpg" alt="Product 1" class="card-img" />
-            <h2 class="card-title">Nike AirMax</h2>
-            <p class="card-description">Tênis Airmax.</p>
+            <img src="/image/products/6.jpg" alt="Camiseta Basica White" class="card-img" />
+            <h2 class="card-title">Camiseta Basica White</h2>
+            <p class="card-description">Camiseta Basica White</p>
             <div class="card-footer">
-                <span class="card-price">R$ 699,99</span>
+                <span class="card-price">R$ 99,99</span>
                 <button class="btn">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="card">
-            <img src="/image/products/1.jpg" alt="Product 1" class="card-img" />
-            <h2 class="card-title">Nike AirMax</h2>
-            <p class="card-description">Tênis Airmax.</p>
+            <img src="/image/products/7.jpg" alt="Camisetas Coleção Earth" class="card-img" />
+            <h2 class="card-title">Camisetas Earth</h2>
+            <p class="card-description">Camisetas Coleção Earth</p>
             <div class="card-footer">
-                <span class="card-price">R$ 699,99</span>
+                <span class="card-price">R$ 189,99</span>
                 <button class="btn">Adicionar ao Carrinho</button>
             </div>
         </div>
         <div class="card">
-            <img src="/image/products/1.jpg" alt="Product 1" class="card-img" />
-            <h2 class="card-title">Nike AirMax</h2>
-            <p class="card-description">Tênis Airmax.</p>
+            <img src="/image/products/8.jpg" alt="Relógio All Black" class="card-img" />
+            <h2 class="card-title">Relógio All Black</h2>
+            <p class="card-description">Relógio All Black</p>
             <div class="card-footer">
                 <span class="card-price">R$ 699,99</span>
                 <button class="btn">Adicionar ao Carrinho</button>
@@ -100,6 +100,13 @@
     <footer class="footer">
         <div class="container">&copy; 2023 Minha Loja. Todos os direitos reservados.</div>
     </footer>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2 class="popup-title">Compra Finalizada</h2>
+            <p class="popup-content-p">Obrigado por sua compra!</p>
+            <button id="close-popup" class="btn">Fechar</button>
+        </div>
+    </div>
 </body>
 
 </html>

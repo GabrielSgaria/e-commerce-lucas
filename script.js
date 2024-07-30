@@ -1,4 +1,4 @@
-let cart = [];
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.btn');
@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById('popup');
     const cartCount = document.getElementById('cart-count');
     const closePopup = document.getElementById('close-popup');
+
+    updateCartCount();
 
     buttons.forEach(button => {
         button.addEventListener('click', (event) => {
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cart.length > 0) {
             popup.classList.remove('hidden');
             cart = [];
+            localStorage.removeItem('cart');
             updateCartCount();
         } else {
             alert('Seu carrinho está vazio.');
@@ -31,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addToCart(price) {
         cart.push(price);
+        localStorage.setItem('cart', JSON.stringify(cart));
         updateCartCount();
         alert(`Item adicionado ao carrinho. Total de itens no carrinho: ${cart.length}`);
     }
