@@ -15,13 +15,18 @@
         <div>
             <a href="index.html" class="nav-link">Home</a>
             <a href="gallery.html" class="nav-link">Galeria</a>
-            <!-- <a href="#" class="nav-link">Contatos</a> -->
         </div>
         <a class="brand">
             <i class="ph ph-shopping-cart" id="icon-cart"></i>
             <span id="cart-count" class="cart-count">(0)</span>
             <button id="finalize-purchase">Finalizar Compra</button>
         </a>
+        <div id="cart-details" class="cart-details hidden">
+            <button id="close-cart" class="btn-close-cart">Fechar Carrinho</button>
+            <h2>Itens no Carrinho</h2>
+            <div id="cart-items"></div>
+            <button id="clear-cart" class="btn">Limpar Carrinho</button>
+        </div>
     </nav>
     <div class="hero">
         <img src="/image/logo/Lm2.png" alt="Brand" class="hero-img" />
@@ -58,7 +63,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="/image//products/4.jpg" alt="Product 4" class="card-img" />
+                <img src="/image/products/4.jpg" alt="Product 4" class="card-img" />
                 <h2 class="card-title">Boné BN</h2>
                 <p class="card-description">Boné Vermelho BN</p>
                 <div class="card-footer">
@@ -95,6 +100,7 @@
             <button id="close-popup" class="btn">Fechar</button>
         </div>
     </div>
+    
 </body>
 
 </html>

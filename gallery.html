@@ -22,6 +22,12 @@
             <span id="cart-count" class="cart-count">(0)</span>
             <button id="finalize-purchase">Finalizar Compra</button>
         </a>
+        <div id="cart-details" class="cart-details hidden">
+            <button id="close-cart" class="btn-close-cart">Fechar Carrinho</button>
+            <h2>Itens no Carrinho</h2>
+            <div id="cart-items"></div>
+            <button id="clear-cart" class="btn">Limpar Carrinho</button>
+        </div>
     </nav>
     <main class="grid">
         <div class="card">
@@ -103,7 +109,7 @@
     <div id="popup" class="popup hidden">
         <div class="popup-content">
             <h2 class="popup-title">Compra Finalizada</h2>
-            <p class="popup-content-p">Obrigado por sua compra!</p>
+            <p>Obrigado por sua compra!</p>
             <button id="close-popup" class="btn">Fechar</button>
         </div>
     </div>
