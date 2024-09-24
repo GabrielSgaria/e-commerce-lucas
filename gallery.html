@@ -15,7 +15,6 @@
         <div>
             <a href="index.html" class="nav-link">Home</a>
             <a href="gallery.html" class="nav-link">Galeria</a>
-            <!-- <a href="#" class="nav-link">Contatos</a> -->
         </div>
         <a class="brand">
             <i class="ph ph-shopping-cart" id="icon-cart"></i>
@@ -27,6 +26,9 @@
             <h2>Itens no Carrinho</h2>
             <div id="cart-items"></div>
             <button id="clear-cart" class="btn">Limpar Carrinho</button>
+        </div>
+        <div id="login-area">
+            <button id="login-btn">Login</button>
         </div>
     </nav>
     <main class="grid">
@@ -111,6 +113,15 @@
             <h2 class="popup-title">Compra Finalizada</h2>
             <p>Obrigado por sua compra!</p>
             <button id="close-popup" class="btn">Fechar</button>
+        </div>
+    </div>
+    <div id="popup-login" class="popup hidden">
+        <div class="popup-content">
+            <h2 class="popup-title">Login</h2>
+            <input type="text" id="username" placeholder="Usuário">
+            <input type="password" id="password" placeholder="Senha">
+            <button id="submit-login" class="btn">Entrar</button>
+            <button id="close-login-popup" class="btn">Fechar</button>
         </div>
     </div>
 </body>

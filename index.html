@@ -27,11 +27,16 @@
             <div id="cart-items"></div>
             <button id="clear-cart" class="btn">Limpar Carrinho</button>
         </div>
+        <div id="login-area">
+            <button id="login-btn">Login</button>
+        </div>
     </nav>
+
     <div class="hero">
         <img src="/image/logo/Lm2.png" alt="Brand" class="hero-img" />
         <h2 class="hero-title">A ROUPA CERTA PARA CADA OCASIÃO</h2>
     </div>
+
     <div class="emphasis">
         <h1 class="emphasis-title">Destaques</h1>
         <div class="grid">
@@ -76,15 +81,14 @@
             <a href="gallery.html" class="btn-gallery">Ver todo o catálogo</a>
         </div>
     </div>
+
     <div class="about">
         <h3 class="about-title">Sobre Nós</h3>
-        <p>
-            Bem-vindo à nossa loja! Somos apaixonados por moda e comprometidos em trazer a você as últimas tendências e
-            estilos para todas as ocasiões.
-            Nossa missão é oferecer roupas de alta qualidade que combinam conforto e elegância, permitindo que você se
-            sinta confiante e autêntico em qualquer momento.
-        </p>
+        <p>Bem-vindo à nossa loja! Somos apaixonados por moda e comprometidos em trazer a você as últimas tendências e
+            estilos para todas as ocasiões. Nossa missão é oferecer roupas de alta qualidade que combinam conforto e
+            elegância, permitindo que você se sinta confiante e autêntico em qualquer momento.</p>
     </div>
+
     <div class="social" id="icons">
         <a href="https://www.instagram.com/_gabrielsgaria" target="_blank" class="social-icon">
             <i class="ph ph-instagram-logo"></i>
@@ -93,6 +97,17 @@
             <i class="ph ph-facebook-logo"></i>
         </a>
     </div>
+
+    <div id="popup-login" class="popup hidden">
+        <div class="popup-content">
+            <h2 class="popup-title">Login</h2>
+            <input type="text" id="username" placeholder="Usuário">
+            <input type="password" id="password" placeholder="Senha">
+            <button id="submit-login" class="btn">Entrar</button>
+            <button id="close-login-popup" class="btn">Fechar</button>
+        </div>
+    </div>
+
     <div id="popup" class="popup hidden">
         <div class="popup-content">
             <h2 class="popup-title">Compra Finalizada</h2>
@@ -100,7 +115,6 @@
             <button id="close-popup" class="btn">Fechar</button>
         </div>
     </div>
-    
 </body>
 
 </html>
